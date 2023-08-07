@@ -58,6 +58,7 @@ class BasicBlock(nn.Module):
         self.bn2 = norm_layer(planes)
         self.downsample = downsample
         self.stride = stride
+        # self.identity_scaling = 1
 
     def forward(self, x):
         identity = x
